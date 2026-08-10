@@ -3,12 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/style.css">
-    <title> </title>
+    <title>({ dados.titulo }) </title>
+    <link rel="stylesheet" href="{{ url_for('static, filename='style.css') }}">
+    
 </head>
 <body>
 
- <h1> Servidor on! </h1>
+<main class="container">
+    <header class="header">
+        <h1>{{ daos_titulo }}</h1>
+        <p>{{ daos_descricao }}</p>
+    </header>
+
+  <section class="card">
+    <h2>Status do servidor</h2>
+     <p>servidor ativo em <code>http://localhost:5000</code></p>
+  </section>
+</main>
 
  
 </body>
