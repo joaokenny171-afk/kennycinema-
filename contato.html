@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - CinePlay</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topo">
+    <div class="logo">🎬 Cine<span>Play</span></div>
+    <nav>
+      <a href="index.html">Início</a><a href="filmes.html">Filmes</a><a href="clientes.html">Clientes</a><a href="locacoes.html">Locações</a><a href="contato.html" class="ativo">Contato</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="cabecalho-pagina">
+      <div><p class="tag">FALE CONOSCO</p><h1>Contato</h1><p>Envie uma mensagem para a equipe CinePlay.</p></div>
+      <a href="index.html" class="btn btn-secundario">← Voltar</a>
+    </div>
+
+    <section class="form-card contato-card">
+      <form id="formContato">
+        <label>Nome<input type="text" id="contatoNome" required></label>
+        <label>E-mail<input type="email" id="contatoEmail" required></label>
+        <label>Mensagem<textarea id="mensagem" rows="6" required></textarea></label>
+        <button class="btn btn-principal" type="submit">Enviar mensagem</button>
+      </form>
+      <div class="contato-info">
+        <div>🎬<strong>CinePlay</strong><span>Locação simples e organizada.</span></div>
+        <div>📧<strong>E-mail</strong><span>contato@cineplay.com</span></div>
+        <div>🍿<strong>Atendimento</strong><span>Segunda a sexta, 8h às 18h.</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2026 CinePlay</footer>
+  <script src="js/app.js"></script>
+</body>
+</html>

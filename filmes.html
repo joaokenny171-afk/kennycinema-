@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filmes - CinePlay</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topo">
+    <div class="logo">🎬 Cine<span>Play</span></div>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="filmes.html" class="ativo">Filmes</a>
+      <a href="clientes.html">Clientes</a>
+      <a href="locacoes.html">Locações</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="cabecalho-pagina">
+      <div>
+        <p class="tag">CATÁLOGO</p>
+        <h1>Filmes disponíveis</h1>
+        <p>Cadastre e gerencie os filmes disponíveis para locação.</p>
+      </div>
+      <a href="index.html" class="btn btn-secundario">← Voltar</a>
+    </div>
+
+    <section class="form-card">
+      <h2>Cadastrar filme</h2>
+      <form id="formFilme">
+        <div class="grid-form">
+          <label>Título
+            <input type="text" id="titulo" required>
+          </label>
+          <label>Gênero
+            <select id="genero" required>
+              <option value="">Selecionar</option>
+              <option>Ação</option><option>Comédia</option><option>Drama</option>
+              <option>Ficção científica</option><option>Terror</option><option>Animação</option>
+              <option>Aventura</option><option>Romance</option>
+            </select>
+          </label>
+          <label>Ano
+            <input type="number" id="ano" min="1900" max="2100" required>
+          </label>
+          <label>Classificação
+            <select id="classificacao" required>
+              <option value="">Selecionar</option>
+              <option>Livre</option><option>10 anos</option><option>12 anos</option>
+              <option>14 anos</option><option>16 anos</option><option>18 anos</option>
+            </select>
+          </label>
+          <label>Valor da locação (R$)
+            <input type="number" id="valor" min="0" step="0.01" required>
+          </label>
+          <label>Duração (minutos)
+            <input type="number" id="duracao" min="1" required>
+          </label>
+        </div>
+        <button class="btn btn-principal" type="submit">Cadastrar filme</button>
+      </form>
+    </section>
+
+    <section class="lista">
+      <h2>Filmes cadastrados</h2>
+      <div id="listaFilmes" class="filmes-grid"></div>
+    </section>
+  </main>
+
+  <footer>© 2026 CinePlay</footer>
+  <script src="js/classes.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

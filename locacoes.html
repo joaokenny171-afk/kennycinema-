@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Locações - CinePlay</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topo">
+    <div class="logo">🎬 Cine<span>Play</span></div>
+    <nav>
+      <a href="index.html">Início</a><a href="filmes.html">Filmes</a>
+      <a href="clientes.html">Clientes</a><a href="locacoes.html" class="ativo">Locações</a><a href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="cabecalho-pagina">
+      <div><p class="tag">LOCAÇÃO ONLINE</p><h1>Nova locação</h1><p>Selecione o cliente e o filme para registrar a locação.</p></div>
+      <a href="index.html" class="btn btn-secundario">← Voltar</a>
+    </div>
+
+    <section class="form-card">
+      <h2>Registrar locação</h2>
+      <form id="formLocacao">
+        <div class="grid-form">
+          <label>Cliente<select id="clienteLocacao" required></select></label>
+          <label>Filme<select id="filmeLocacao" required></select></label>
+          <label>Data da locação<input type="date" id="dataLocacao" required></label>
+          <label>Prazo (dias)<input type="number" id="prazo" min="1" value="3" required></label>
+        </div>
+        <button class="btn btn-principal" type="submit">Confirmar locação</button>
+      </form>
+    </section>
+
+    <section class="lista">
+      <h2>Histórico de locações</h2>
+      <div id="listaLocacoes" class="tabela-container"></div>
+    </section>
+  </main>
+
+  <footer>© 2026 CinePlay</footer>
+  <script src="js/classes.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
